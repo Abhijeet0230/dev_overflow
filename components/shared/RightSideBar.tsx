@@ -4,23 +4,23 @@ import Image from "next/image";
 import RenderTag from "./RenderTag";
 
 const hotQuestions = [
-  { _id: 1, title: "How do I use express as a custom server in NextJS?" },
+  { _id: "1", title: "How do I use express as a custom server in NextJS?" },
   {
-    _id: 2,
+    _id: "2",
     title:
       "Best practices for data fetching in a Next.js application with Server-Side Rendering (SSR)?",
   },
-  { _id: 3, title: "Is it only me or the font is bolder than necessary?" },
-  { _id: 4, title: "Redux Toolkit Not Updating State as Expected" },
-  { _id: 5, title: "Async/Await Function Not Handling Errors Properly" },
+  { _id: "3", title: "Is it only me or the font is bolder than necessary?" },
+  { _id: "4", title: "Redux Toolkit Not Updating State as Expected" },
+  { _id: "5", title: "Async/Await Function Not Handling Errors Properly" },
 ];
 
 const popularTags = [
-  { _id: 1, name: "javascript", totalQuestions: 5 },
-  { _id: 2, name: "react", totalQuestions: 7 },
-  { _id: 3, name: "next", totalQuestions: 2 },
-  { _id: 4, name: "vue", totalQuestions: 3 },
-  { _id: 5, name: "redux", totalQuestions: 10 },
+  { _id: "1", name: "javascript", totalQuestions: 5 },
+  { _id: "2", name: "react", totalQuestions: 7 },
+  { _id: "3", name: "next", totalQuestions: 2 },
+  { _id: "4", name: "vue", totalQuestions: 3 },
+  { _id: "5", name: "redux", totalQuestions: 10 },
 ];
 
 const RightSideBar = () => {
