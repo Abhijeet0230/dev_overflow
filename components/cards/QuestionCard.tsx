@@ -22,6 +22,43 @@ interface QuestionProps {
   createdAt: Date;
 }
 
+// const questions = [
+//   {
+//     _id: '1',
+//     title: 'Cascading Deletes in SQLAlchemy?',
+//     tags: [
+//       { _id: '1', name: 'python' },
+//       { _id: '2', name: 'sql' },
+//     ],
+//     author: {
+//       _id: '1',
+//       name: 'John Doe',
+//       picture: 'url_to_picture',
+//     },
+//     upvotes: 10,
+//     views: 100,
+//     answers: [{ /* object representing an answer */ }],
+//     createdAt: new Date('2021-09-01T12:00:00.000Z'),
+//   },
+//   {
+//     _id: '2',
+//     title: 'How to center a div?',
+//     tags: [
+//       { _id: '1', name: 'css' },
+//       { _id: '2', name: 'sql' },
+//     ],
+//     author: {
+//       _id: '2',
+//       name: 'Jane Doe',
+//       picture: 'url_to_picture',
+//     },
+//     upvotes: 15,
+//     views: 150,
+//     answers: [{ /* object representing an answer */ }],
+//     createdAt: new Date('2021-09-01T12:00:00.000Z'),
+//   },
+// ];
+
 const QuestionCard = ({
   _id,
   title,
