@@ -12,7 +12,7 @@ export default authMiddleware({
     "/jobs",
   ],
   // eslint-disable-next-line no-useless-escape
-  ignoredRoutes: ["/((?!api|trpc))(_next|.+..+)(.*)"],
+  ignoredRoutes: ["/((?!api|trpc))(_next|.+..+)(.*)", "api/webhooks"],
 });
 
 export const config = {
