@@ -11,8 +11,6 @@ export default authMiddleware({
     "/community",
     "/jobs",
   ],
-  // eslint-disable-next-line no-useless-escape
-  ignoredRoutes: ["/((?!api|trpc))(_next.*|.+.[w]+$)", "/"],
 });
 
 export const config = {
