@@ -3,7 +3,7 @@ import { authMiddleware } from "@clerk/nextjs";
 export default authMiddleware({
   publicRoutes: [
     "/",
-    "/api/webhooks(.*)",
+    "/api/webhooks/user/route",
     "/question/:id",
     "/tags",
     "/tags/:id",
@@ -11,6 +11,8 @@ export default authMiddleware({
     "/community",
     "/jobs",
   ],
+  // eslint-disable-next-line no-useless-escape
+  ignoredRoutes: ["/((?!api|trpc))(_next|.+..+)(.*)"],
 });
 
 export const config = {
