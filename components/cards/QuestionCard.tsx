@@ -4,6 +4,9 @@ import RenderTag from "../shared/RenderTag";
 import Metric from "../shared/Metric";
 import { formatAndDivideNumber, getTimestamp } from "@/lib/utils";
 
+import EditDeleteAction from "../shared/EditDeleteAction";
+import { SignedIn } from "@clerk/nextjs";
+
 interface QuestionProps {
   _id: string;
   title: string;
@@ -13,6 +16,7 @@ interface QuestionProps {
   }[];
   author: {
     _id: string;
+    clerkId: string; // this thing i have extra added to resolve the error in line 41 author.clerkId where it was showing error in clerkId
     name: string;
     picture: string;
   };
@@ -22,43 +26,6 @@ interface QuestionProps {
   createdAt: Date;
   clerkId?: string | null;
 }
-
-// const questions = [
-//   {
-//     _id: '1',
-//     title: 'Cascading Deletes in SQLAlchemy?',
-//     tags: [
-//       { _id: '1', name: 'python' },
-//       { _id: '2', name: 'sql' },
-//     ],
-//     author: {
-//       _id: '1',
-//       name: 'John Doe',
-//       picture: 'url_to_picture',
-//     },
-//     upvotes: 10,
-//     views: 100,
-//     answers: [{ /* object representing an answer */ }],
-//     createdAt: new Date('2021-09-01T12:00:00.000Z'),
-//   },
-//   {
-//     _id: '2',
-//     title: 'How to center a div?',
-//     tags: [
-//       { _id: '1', name: 'css' },
-//       { _id: '2', name: 'sql' },
-//     ],
-//     author: {
-//       _id: '2',
-//       name: 'Jane Doe',
-//       picture: 'url_to_picture',
-//     },
-//     upvotes: 15,
-//     views: 150,
-//     answers: [{ /* object representing an answer */ }],
-//     createdAt: new Date('2021-09-01T12:00:00.000Z'),
-//   },
-// ];
 
 const QuestionCard = ({
   clerkId,
@@ -71,6 +38,8 @@ const QuestionCard = ({
   answers,
   createdAt,
 }: QuestionProps) => {
+  const showActionButtons = clerkId && clerkId === author.clerkId;
+
   return (
     <div className="card-wrapper rounded-[10px] p-9 sm:px-11">
       <div className="flex flex-col-reverse items-start justify-between gap-5 sm:flex-row">
@@ -84,7 +53,12 @@ const QuestionCard = ({
             </h3>
           </Link>
         </div>
-        {/* If signed in add edit delete actions */}
+
+        <SignedIn>
+          {showActionButtons && (
+            <EditDeleteAction type="Question" itemId={JSON.stringify(_id)} />
+          )}
+        </SignedIn>
       </div>
       <div className="mt-3.5 flex flex-wrap gap-2">
         {tags.map((tag) => (
