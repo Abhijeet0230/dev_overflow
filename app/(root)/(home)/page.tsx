@@ -14,8 +14,10 @@ export const revalidate = true;
 export default async function Home({ searchParams }: SearchParamsProps) {
   const result = await getQuestions({
     searchQuery: searchParams.q,
+    filter: searchParams.filter,
   });
-  // console.log(result.questions);
+
+  // fetch recommended questions
 
   return (
     <>
