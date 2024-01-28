@@ -27,7 +27,6 @@ const Page = async ({ params, searchParams }: URLProps) => {
           otherClasses="flex-1"
         />
       </div>
-
       <div className="mt-10 flex w-full flex-col gap-6">
         {result.questions.length > 0 ? (
           result.questions.map((question: IQuestion) => (

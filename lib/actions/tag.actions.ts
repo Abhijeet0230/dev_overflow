@@ -87,6 +87,9 @@ export async function getQuestionsByTagId(params: GetQuestionsByTagIdParams) {
     const skipAmount = (page - 1) * pageSize;
 
     const tagFilter: FilterQuery<ITag> = { _id: tagId };
+    if (searchQuery) {
+      tagFilter.$or = [{ $regex: searchQuery, $options: "i" }];
+    }
 
     const tag = await Tag.findOne(tagFilter).populate({
       path: "questions",
