@@ -15,7 +15,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { auth } from "@clerk/nextjs";
 
-export const revalidate = true;
+// export const revalidate = true;
 
 export const metadata: Metadata = {
   title: "Home | Dev Overflow",

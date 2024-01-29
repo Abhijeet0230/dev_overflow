@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   description: "Collections page of Dev Overflow",
 };
 
-export const revalidate = true;
+// export const revalidate = true;
 
 export default async function page({ searchParams }: SearchParamsProps) {
   const { userId } = auth();
