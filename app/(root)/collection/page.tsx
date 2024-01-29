@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
 export const revalidate = true;
 
-export default async function Collection({ searchParams }: SearchParamsProps) {
+export default async function page({ searchParams }: SearchParamsProps) {
   const { userId } = auth();
 
   if (!userId) return null;
