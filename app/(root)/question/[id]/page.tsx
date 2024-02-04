@@ -12,6 +12,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import type { Metadata } from "next";
+import { redirect } from "next/navigation";
 
 export const metadata: Metadata = {
   title: "Question details | Dev Overflow",
@@ -32,6 +33,8 @@ const Page = async ({ params, searchParams }: QuestionDetailsProps) => {
 
   if (clerkId) {
     mongoUser = await getUserById({ userId: clerkId });
+  } else {
+    redirect("/sign-up");
   }
 
   const result = await getQuestionById({ questionId: params.id });
