@@ -1,5 +1,10 @@
 # Dev Overflow - A problem solving community
 
+
+https://github.com/user-attachments/assets/0d71a5ba-8372-48ec-9920-8025738849a4
+
+
+
 ![Home Page](https://github.com/Abhijeet0230/dev_overflow/raw/main/Homepage%20dark.png
 )
 
@@ -7,18 +12,10 @@
 
 Here is a deployed Link of the project: https://dev-overflow-git-main-abhijeet-singhs-projects-217fd32f.vercel.app/
 
+## Credentials to sign-in
+- username - ritik_03
+- password - pass123@_
 
-## 🛠️ Setup Project
-
-To get this project up and running in your development environment, follow these step-by-step instructions.
-
-### 🍴 Prerequisites
-
-We need to install or make sure that these tools are pre-installed on your machine:
-
-- [NodeJS](https://nodejs.org/en/download/): It is a JavaScript runtime environment.
-
-- [Git](https://git-scm.com/downloads): It is an open source version control system.
 
 ## ✨ Features
 
@@ -32,6 +29,31 @@ We need to install or make sure that these tools are pre-installed on your machi
 – Integrated views and voting mechanism to gauge post popularity
 
 – Added filter and pagination features to virtually all pages for improved user experience.
+
+## 💻 Tech stack used
+
+- Next.js
+- Typescript
+- MongoDb
+- Tailwind
+- Shadcn
+- Zod
+- Clerk
+- Tiny MCE
+
+## 🛠️ Setup Project
+
+To get this project up and running in your development environment, follow these step-by-step instructions.
+
+### 🍴 Prerequisites
+
+We need to install or make sure that these tools are pre-installed on your machine:
+
+- [NodeJS](https://nodejs.org/en/download/): It is a JavaScript runtime environment.
+
+- [Git](https://git-scm.com/downloads): It is an open source version control system.
+
+
 
 
 ### 🚀 Install Project
