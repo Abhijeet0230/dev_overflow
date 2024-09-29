@@ -1,36 +1,94 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Dev Overflow - A problem solving community
 
-## Getting Started
+![Home Page](https://github.com/Abhijeet0230/dev_overflow/raw/main/Homepage%20dark.png
+)
 
-First, run the development server:
+## 🌐 Deployed Link
+
+Here is a deployed Link of the project: https://dev-overflow-git-main-abhijeet-singhs-projects-217fd32f.vercel.app/
+
+
+## 🛠️ Setup Project
+
+To get this project up and running in your development environment, follow these step-by-step instructions.
+
+### 🍴 Prerequisites
+
+We need to install or make sure that these tools are pre-installed on your machine:
+
+- [NodeJS](https://nodejs.org/en/download/): It is a JavaScript runtime environment.
+
+- [Git](https://git-scm.com/downloads): It is an open source version control system.
+
+## ✨ Features
+
+
+– Developed a Q/A platform for developers to ask questions.
+  
+– Implemented a global database data-fetching mechanism to optimize content retrieval.
+
+– Created a badge and reputation system to incentivize user engagement
+
+– Integrated views and voting mechanism to gauge post popularity
+
+– Added filter and pagination features to virtually all pages for improved user experience.
+
+
+### 🚀 Install Project
+
+1. Clone the Repository
+
+```bash
+git clone https://github.com/Abhijeet0230/dev_overflow.git
+```
+
+2. Install packages
+
+```
+npm install
+```
+
+3. create a `.env` file add necessary credencitals
+
+```bash
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=
+NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=
+NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=
+NEXT_CLERK_WEBHOOK_SECRET=
+NEXT_PUBLIC_TINY_EDITOR_API_KEY=
+MONGODB_URL=
+NEXT_PUBLIC_SERVER_URL=
+OPENAI_API_KEY=
+NEXT_PUBLIC_RAPID_API_KEY=
+```
+
+4. Run the project using command below
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Project Page Screenshoots
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<details open>
+<summary>
+ Feature pages
+</summary> <br />
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+<p align="center">
+    <img width="49%" src="https://github.com/Abhijeet0230/dev_overflow/raw/main/Profile%20Page%20light.png" alt="Home page"/>
+&nbsp;
+    <img width="49%" src="https://github.com/Abhijeet0230/dev_overflow/raw/main/Community%20Page.png" alt="Global-search"/>
+</p>
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<p align="center">
+    <img width="49%" src="https://github.com/Abhijeet0230/dev_overflow/raw/main/Question%20Page.png" alt="All users"/>
+&nbsp;
+    <img width="49%" src="https://github.com/Abhijeet0230/dev_overflow/raw/main/Ask%20question%20page.png" alt="Tags page"/>
+</p> 
+    
+    
+</details>
